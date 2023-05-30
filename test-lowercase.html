@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Page de test gtag</title>
+	
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKM28H6');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>dataLayer.push({"FormType":"fi-rapportfinancier","IdTiers":"100","Event":"formsubmission"})</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKM28H6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<h1>Page de test gtag</h1>
+	<ul>
+		<li><a href="#" onclick="gtag('event', 'click', {'event_category':'micro', 'event_label':'cta_Rnet_menu'});">Lien gtag 1</a></li>
+		<li><a href="#" onclick="gtag('event', 'Click', {'event_category':'micro', 'event_label':'cta_ouvrir_compte_menu'});">Lien gtag 2</a></li>
+		<li><a href="#" onclick="gtag('event', 'send', {'event_category':'macro', 'event_label':'contact_form_complete'});">Lien gtag 3</a></li>
+		<li><a href="#" onclick="gtag('event', 'send', {'event_category':'macro', 'event_label':'new_member_form_complete'});">Lien gtag 4</a></li>
+	</ul>
+	<ul>
+		<li><a href="https://www.google.com">Lien externe sans tracking</a></li>
+		<li><a href="https://www.google.net" onclick="gtag('event', 'lienext', {'event_category':'lienextcat', 'event_label':'lienextlab'});">Lien gtag</a></li>
+	</ul>
+</body>
+</html>
