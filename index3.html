@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Page de test</title>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NH6ZLTQW');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH6ZLTQW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<h1>Page de test</h1>
+	<ul>
+		<li><a href="#" onclick="ga('send', 'event', 'micro', 'click', 'cta_Rnet_menu');">Lien analytics.js 1</a></li>
+		<li><a href="#" onclick="ga('send', 'event', 'micro', 'click', 'cta_ouvrir_compte_menu');">Lien analytics.js 2</a></li>
+		<li><a href="#" onclick="ga('send', 'event', 'macro', 'send', 'contact_form_complete');">Lien analytics.js 3</a></li>
+		<li><a href="#" onclick="ga('send', 'event', 'macro', 'send', 'new_member_form_complete');">Lien analytics.js 4</a></li>
+	</ul>
+	<ul>
+		<li><a href="https://www.google.com">Lien externe sans tracking</a></li>
+		<li><a href="https://www.google.net" onclick="ga('send', 'event', 'lien-ext', 'testlienext', 'lienext-analytics');">Lien analytics.js</a></li>
+	</ul>
+	<ul>
+		<li><a href="#" onclick="gtag('event', 'click', {'event_category':'micro', 'event_label':'cta_Rnet_menu'});">Lien gtag 1</a></li>
+		<li><a href="#" onclick="gtag('event', 'Click', {'event_category':'micro', 'event_label':'cta_ouvrir_compte_menu'});">Lien gtag 2</a></li>
+		<li><a href="#" onclick="gtag('event', 'send', {'event_category':'macro', 'event_label':'contact_form_complete'});">Lien gtag 3</a></li>
+		<li><a href="#" onclick="gtag('event', 'send', {'event_category':'macro', 'event_label':'new_member_form_complete'});">Lien gtag 4</a></li>
+		<li><a href="#" onclick="gtag('event', 'lientestGA4', {'param1': 'macroGA4', 'param2':'newGA4'});">Lien ga4</a></li>
+	</ul>
+</body>
+</html>
